@@ -17,7 +17,9 @@ import { RegisterRoutes } from '../routes/routes';
 const app: Express = express();
 const port = process.env.PORT;
 
-app.use(cors())
+app.use(cors({
+    origin: 'lieddybbuk.com',
+}))
 
 /* ******** Setup speed limiter ******* */
 
