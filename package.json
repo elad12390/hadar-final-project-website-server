@@ -7,7 +7,7 @@
     "build": "npx tsc",
     "predev": "npm run tsoa",
     "prebuild": "npm run tsoa",
-    "start": "node build/index.js",
+    "start": "node build/src/index.js",
     "dev": "concurrently \"nodemon\" \"nodemon -x tsoa spec\"",
     "tsoa": "tsoa spec-and-routes"
   },
@@ -17,6 +17,9 @@
     ],
     "ext": "ts",
     "exec": "ts-node src/index.ts"
+  },
+  "engines": {
+    "node": "16.15.x"
   },
   "keywords": [],
   "author": "",
