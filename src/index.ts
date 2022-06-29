@@ -18,7 +18,7 @@ const app: Express = express();
 const port = process.env.PORT;
 
 app.use(cors({
-    origin: 'lieddybbuk.com',
+    origin: 'https://lieddybbuk.com',
 }))
 
 /* ******** Setup speed limiter ******* */
